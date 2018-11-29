@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+
+1、background-size：contain  /  cover
+   contain:
+      a。图片大于盒子：图片会等比例缩放（将图片缩小），盒子会有空白
+      b.图片小于盒子：图片会等比例缩放（将图片放大），盒子会有空白
+
+   cover:
+      a。图片大于盒子：图片会等比例缩放,导致图片部分看不见
+      a。图片小于盒子：图片会等比例缩放,导致图片部分看不见
+
+2、过渡     动画做完后会回到初始状态
+    transition:属性名 动画时间  动画的延迟时间 动画的速度  
+
+3、display &&  opacity
+    display 不能做动画   值只有现实和不显示
+    opacity 能做动画     0-1
+ 4、过渡兼容性处理：
+    transition:all 2s steps(4);
+        -moz-transition: all 2s steps(4);
+            -webkit-transition: all 2s steps(4);
+                -o-transition: all 2s steps(4);
+
+ transition:属性名 动画时间  动画的延迟时间 动画的速度  steps(4) == 注释：steps()和动画速度不能共存
+
+ 5、transform属性
+ position:absolute ;left:0px       相对于父元素或者往上找直到找到body
+ transform:translate(20px)         相对于自身的偏移   默认是X
+ transform:scaleX(2)               如果大于1：放大，如果小于1：缩小
+ transform:rotate(45deg)           角度大于0 顺时针旋转，角度小于0 顺时针旋转
+
+ transform:skew(30deg) 斜切 ||  扭曲 
+ 
+6、如何让一个盒子居中显示：position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)
+
+
+2d
+     tranform:translate(X,Y)|| translateX(20px) 
+     tranform:scale(0.5)
+     tranform:rotate(45deg)   
+     transform:skew(30deg)
+     transfor-origin:left  top ||  30px  40px
+     transition:属性名 动画时间  动画延迟时间  动画速度  (steps())
+
+3d
+    tranform:translate3d(X,Y,Z)
+    tranform:scale3d(1,2,3)
+    tranform:rotate3d(1,2,3,45deg)
+
+    开启3d效果：transform-style: preserve-3d;  
+    透视：perspective:200px
+
+
+
+
+ tranform:rotateX(45deg) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

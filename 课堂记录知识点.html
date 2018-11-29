@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+   
+</head>
+<body>
+    1.背景控制
+       background-attachment:fix 固定图片
+    
+    2.背景大小
+        background-size: contain /cover
+        contain:等比缩放        有空白
+        cover:等比缩放          图片看不见
+        background:url(图片地址)  norepeat center center(定位) /20px 30px (size)
+
+    3.背景以什么位置显示以及裁切  
+        background-origin:border-box/padding-box/content-box   定位显示
+        background-clip:border-box/padding-box/content-box   以什么位置裁剪
+
+    4.过渡  简写 transition:属性名称  动画时间 动画速度   延时时间
+        transition: transition-property   transition-duration  transition-timing-function:(设置时间函数,控制运动速度.使用linear)  transition-delay;
+        transition:left 6s linear 1s, background-color 8 linear 2s;  
+        steps(4) 以4个步伐运动
+        display:不能做动画  只有显示与不显示
+        opacity:可以做动画  效果范围值 0-1
+            
+    5.二维动画  transform(变形)的几个属性
+
+        平移:
+        transform:translate(x轴,y轴)  
+            区别:
+                transform:translate    相对于自身的偏移   默认是X轴正方向
+                position:absolute      如果父元素没有相对定位  直接往上找父元素 知道body     
+        
+        缩放:scale(2)   2为缩放倍数范围(大于1放大  小于1缩小)
+        transform:scaleX(30px)      水平缩放30度
+        transform:scaleY(30px)      垂直缩放30度   
+        transform:scale(30px,30px)    
+
+        旋转:rotate(a)  一个参数
+        transform:rotate(a) 旋转  以z轴为轴点  a为角度deg
+            角度大于0顺时针为正    角度小于0 逆时针为负
+        旋转轴心:z轴 , x轴  y轴  left top 
+            transform-origin:left top  扑克发牌旋转
+
+        斜切/扭曲:skew(角度)
+        transform:skew(30deg)  斜切   角度为正时向水平轴的负方向切   为负角度时为水平正方形切
+        transform:skew(ax,ay)
+        
+        如何让一个盒子居中显示:盒子自身相对于父元素绝对定位,top left给50%,然后平移自身的一半负50%.
+        position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+
+    6.三维变化 
+        三维平移 translate3d
+        transform:translate3d(x轴,y轴,z轴)  3个参数
+        
+        三维缩放  scale3d (x轴,y轴,z轴)  3个参数
+
+        三维旋转  rotate3d (x轴,y轴,z轴,angle)
+        
+        景深/透视:
+            需要开启3D效果 transform-style:preserve-3d  让子元素保留3d变换后的效果
+            左手定则:确定轴向  确定正负值
+
+            透视:perspective
+            perspective-origin:0px 0px ;远景参照点
+
+    </body>
+</html>
