@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;   
+        }
+        ul{
+            width: 150px;
+            height: 50px;
+            float: left;
+            margin-top:200px;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            transform-style: preserve-3d;
+            transition: transform 3s;
+            /* transform: rotate3d(1,1,0,-50deg); */    
+        }
+        li{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        ul:hover{
+            transform: rotateX(-90deg);
+        }
+        li:nth-child(odd){
+            background-color: yellow;
+            transform:translateY(-25px) rotateX(90deg);  /*向上提升25px,向后90deg*/  
+            
+        }
+        li:nth-child(even){
+            background-color: rgb(79, 190, 79);
+            transform:translateZ(25px) rotate(0deg);    /*向前z轴25px*/
+        }
+    </style>
+<body>
+    <ul>
+        <li>三国演义</li>
+        <li>Web前端</li>
+    </ul>
+    <ul>
+        <li>三国演义</li>
+        <li>Web前端</li>
+    </ul>
+    <ul>
+        <li>三国演义</li>
+        <li>Web前端</li>
+    </ul>
+    <ul>
+        <li>三国演义</li>
+        <li>Web前端</li>
+    </ul>
+</body>
+
+</html>

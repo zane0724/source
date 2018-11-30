@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(90, 199, 233);
+            margin: 200px auto;
+           
+        }
+        .aaa{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+        .aaa:hover{
+            transform: rotateY(180deg);
+        }
+        .money{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(119, 45, 45);
+            border-radius: 50%;
+            font-size: 24px;
+            font-weight: bold;
+            writing-mode:tb;
+            position:absolute;
+            left: 0;
+            top: 0;
+            line-height: 400px;
+            text-align: center;
+            transform:translateZ(1px);
+   
+        }
+        .share{
+            width: 400px;
+            height: 400px;
+            background-color: #fff;;
+            border-radius: 50%;
+            font-size: 24px;
+            font-weight: bold;
+            writing-mode:tb;
+            line-height: 400px;
+            text-align: center;
+            position: absolute;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="aaa">
+            <div class="money">百度钱包</div>
+            <div class="share">"1分钱专享"</div>
+        </div>
+    </div>
+    
+</body>
+</html>
