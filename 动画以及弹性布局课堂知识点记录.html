@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        1、动画的实现
+        animation-name: moveTest;
+        animation-duration: 2s;
+
+        @keyframes  moveTest{
+            0%{}
+            20%{}
+            100%{}
+        }
+
+
+    2、animation-fill-mode
+        有延迟
+            animation-fill-mode:forwards    0%动画不会立刻执行，结束时会停留在结束状态
+            animation-fill-mode:backwards   0%动画会立刻执行，  结束时不会停留在结束状态
+            animation-fill-mode:both        0%动画会立刻执行，  结束时会停留在结束状态
+
+        没有延迟
+            animation-fill-mode:forwards     0%动画会立刻执行，结束时会停留在结束状态
+            animation-fill-mode:backwards    0%动画会立刻执行，  结束时不会停留在结束状态
+            animation-fill-mode:both         0%动画会立刻执行，  结束时会停留在结束状态
+
+
+
+    3、animation:动画名 动画时间  动画的延迟时间  动画的速度  次数(infinite)  forwards
+        @keyframes  动画名{
+            0%{}=====from{}
+            100%{}=====to{}
+        }
+
+
+    4.弹性/伸缩布局
+        display:flex;开启, 当子元素的宽度大于父元素宽度的时候,子元素自动平均收缩
+        justify-content(父元素):左中右
+                            flex-start || flex-end || center || space-around(两边有间距) ||space-between (两边不会有间距)
+        flex-wrap: 控制子元素是否换行显示,默认不换行
+                    nowrap:不换行 则收缩
+                    wrap:换行
+                    wrap-reserve:翻转右到左
+        flex-direction: 设置子元素排列方向
+                        row  默认为行 水平从左到右
+                        row-reverse 水平翻转 从右到左
+                        column 默认为列  垂直从上至下
+                        column-reverse 翻转下到上
+        综合写法:flex-flow: row wrap ;
+        
+    5.给子元素设置扩展与收缩空间:
+
+        flex-grow:可以用来扩展子元素的宽度.设置当前
+                flew
+
+        flex-shrink:定义收缩比例,通过设置的值来计算收缩空间
+    6.flex  用来获取盒子的剩余空间伸缩值
+        flex:1;子元素根据父元素的大小等均分
+
+    7.设置子元素在侧轴方向上的对齐方式
+
+    8.align-items:父元素侧轴  上中下
+        flex-start || flex-end || center
+    子元素:
+        align-self:center  ||flex-start || flex-end 
+
+
+
+</body>
+</html>

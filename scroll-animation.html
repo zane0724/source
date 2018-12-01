@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .nav{
+            width: 882px;
+            height: 82px;
+            background-color: rgb(139, 32, 32);
+            margin: 200px auto;
+            overflow: hidden;
+        }
+        .nav ul{
+            width: 200%;   /*针对叠加一份改值为200%*/
+            animation-name: move;  /*动画名称*/
+            animation-duration: 7s; /*动画时长*/
+            animation-iteration-count: infinite; /*循环次数*/
+            animation-timing-function: linear; /*匀速*/
+        }
+        ul>li{
+            float: left;
+            width: 126px;
+        }
+        img{
+            width: 100%;  /*继承父亲的宽度*/
+        }
+        ul:hover{
+            cursor: pointer;
+            animation-play-state: paused;
+        }
+        /*createAnimation*/
+        @keyframes move{
+            from{
+                transform: translate(0px)  /*start*/
+            }
+            to{
+                transform: translate(-882px) /*end*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><img src="./images/1.jpg" alt=""></li>
+            <li><img src="./images/2.jpg" alt=""></li>
+            <li><img src="./images/3.jpg" alt=""></li>
+            <li><img src="./images/4.jpg" alt=""></li>
+            <li><img src="./images/5.jpg" alt=""></li>
+            <li><img src="./images/6.jpg" alt=""></li>
+            <li><img src="./images/7.jpg" alt=""></li>
+            <li><img src="./images/1.jpg" alt=""></li>
+            <li><img src="./images/2.jpg" alt=""></li>
+            <li><img src="./images/3.jpg" alt=""></li>
+            <li><img src="./images/4.jpg" alt=""></li>
+            <li><img src="./images/5.jpg" alt=""></li>
+            <li><img src="./images/6.jpg" alt=""></li>
+            <li><img src="./images/7.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
