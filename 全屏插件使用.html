@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .first.current {
+            font-size: 200px;
+        }
+
+        .second.current {
+            font-size: 200px;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.fullPage.min.js"></script>
+</head>
+
+<body>
+    <div id="dowebok">
+        <div class="section first">
+            <h3>第1屏</h3>
+        </div>
+        <div class="section second">
+            <h3>2屏</h3>
+        </div>
+        <div class="section">
+            <h3>3屏</h3>
+        </div>
+        <div class="section">
+            <h3>4屏</h3>
+        </div>
+    </div>
+    <script>
+        /*全屏插件使用方法:
+                1.全屏插件基于jquery的插件,引入jquery以及全屏fullpage插件,
+                2.操作对象使用全屏插件 
+                3.加载全屏后执行时间 afterload:滚动到某一屏后的回调函数，接收 anchorLink 和 index 两个参数，
+                anchorLink 是锚链接的名称，index 是序号，从1开始计算.*/
+
+        $(function () {
+            $("#dowebok").fullpage({
+                // 设置每一屏的颜色
+                sectionsColor:["red", "green", "blue", "pink"],
+                /*afterload:滚动到某一屏后的回调函数，接收 anchorLink 和 index 两个参数，
+                anchorLink 是锚链接的名称，index 是序号，从1开始计算*/
+                afterLoad:function(anchorLink, index){
+                    $(".section").removeClass("current");
+                    alert(index+"afterload(L大写):滚动到某一屏后的回调函数,接收 anchorLink 和 index 两个参数，anchorLink 是锚链接的名称，index 是序号，从1开始计算");
+                    /*添加样式,当滚动到某一屏之后，为元素添加样式--标记*/
+                    $(".section").eq(index - 1).addClass("current");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
