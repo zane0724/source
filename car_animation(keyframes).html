@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .car{
+            width: 1200px;
+            height: 200px;
+            border-bottom: 6px dashed gray;
+            margin: 100px 100px  0  50px;
+        }
+        .car>img{
+            width: 200px;
+            height: 200px;
+            animation: move 7s 2s linear infinite  ;
+        }
+        /* 创建动画 */
+        @keyframes move{
+            0%{
+                transform: translateX(0) rotateY(0deg);
+            }
+            50%{
+                transform: translateX(1200px) rotateY(0deg);
+            }
+            55%{
+                transform: translateX(1200px) rotateY(180deg);
+            }
+            100%{
+                transform: translateX(0) rotateY(180deg) ;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="car"> 
+        <img src="./images/car.jpg" alt="">
+    </div>
+</body>
+</html>
