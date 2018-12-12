@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #list .play {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="./mp3/光头李进 - 你在他乡还好吗.mp3" id="aud" controls="controls" autoplay="autoplay"></audio>
+    <ol id="list">
+        <li>mp3/甄妮 _ 罗文 - 铁血丹心 (Live).mp3</li>
+        <li>MP3/卢冠廷 - 一生所爱.mp3</li>
+        <li>mp3/Never Say Good Bye.mp3</li>
+        <li>MP3/云汐 - 女驸马.mp3</li>
+        <li>MP3/牛奶咖啡 - 明天,你好.mp3</li>
+    </ol>
+    <script>
+        var aud = document.getElementById("aud");
+        var list = document.getElementById("list");
+        var lis = list.getElementsByTagName("li");
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].ondblclick = function () {
+                aud.src = this.innerText;
+                for (var j = 0; j < lis.length; j++) {
+                    lis[j].className = "";
+                }
+                this.className = 'play';
+            }
+        }
+
+        aud.onended = function () {
+            var index = getIndex();
+            console.log(index);
+            if (index == lis.length - 1) {
+                index = -1;
+            }
+            aud.src = lis[index + 1].innerText
+            for (var j = 0; j < lis.length; j++) {
+                lis[j].className = ''
+            }
+            lis[index + 1].className = 'play'
+        }
+
+        function getIndex() {
+            for (var i = 0; i < lis.length; i++) {
+                if (lis[i].getAttribute('class') == 'play') {
+                    return i;
+                }
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
