@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        ol li{margin:15px auto}
+    </style>
+</head>
+<body>
+    <audio src="" id="audio" controls="controls" autoplay="autoplay"></audio>
+    <ol id="list">
+        <li>source/马里奥赛德,Alan Walker,Iselin Solheim - Faded（钢琴版+女声）.mp3</li>
+        <li>source/逃跑计划 - 夜空中最亮的星.mp3</li>
+        <li>source/薛之谦 - 丑八怪.mp3</li>
+        <li>source/薛之谦-演员.mp3</li>
+    </ol>
+</body>
+    <script>
+        var audio=document.querySelector("#audio");
+        var lis=document.querySelectorAll("li");
+
+        var  index=0;
+        var  url=lis[index].innerHTML;
+        audio.src=url;
+        lis[index].style.background="yellow"
+
+        audio.onended=function(){
+            lis[index].style.background=""
+            if(index==lis.length-1){
+                index=0;
+            }else{
+                index++;
+            }
+
+            lis[index].style.background="yellow";
+            url=lis[index].innerHTML;
+            audio.src=url;
+        }
+    </script>
+</html>

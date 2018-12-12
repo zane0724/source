@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box table{
+            border-collapse: collapse;
+            text-align: center;
+            background-color: yellow;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <!-- 根据下方后台数据,动态创建表格添加至box中 -->
+
+    <script>
+        // 后台提供的json数据如下
+        var Datas=[{
+            name:'王昭君',
+            subject:'语文',
+            score:120,
+            sex:'女',
+        },
+        {
+            name:'安琪拉',
+            subject:'数学',
+            score:110,
+            sex:'女'
+        },
+        {
+            name:'貂蝉',
+            subject:'语文',
+            score:120,
+            sex:'女'
+        },
+        {
+            name:'妲己',
+            subject:'语文',
+            score:180,
+            sex:'女',
+        }       
+    ]
+
+    // 考察问题点:如何动态创建,实现增删 改查
+    
+    //创建表头
+    var headDatas=['姓名','科目','成绩','性别','操作','哈哈']
+    //获取盒子
+    var box =document.getElementById("box");
+    //创建表格  将表格添加到box中
+    var table =document.createElement("table"); 
+    table.border="2px";
+    table.width="600px";
+    box.appendChild(table);
+    //创建表头thead  将其添加到表格中
+    var thead =document.createElement("thead");
+    table.appendChild(thead);
+    thead.style.backgroundColor="pink";
+   
+    // 创建表头的行tr  将其添加到thead
+    var tr =document.createElement("tr");
+    tr.style.height="40px";
+    thead.appendChild(tr);
+    
+    //循环遍历表头数据
+    for(var i=0;i<headDatas.length;i++){
+        // 循环遍历表头数据将数据赋值给th表格表头,并添加到行中
+        var th =document.createElement("th");
+        th.innerText =headDatas[i]
+        tr.appendChild(th);
+    }
+
+
+
+    //创建表单内容 tbody 添加到表格table中
+    var tbody=document.createElement("tbody");
+    table.appendChild(tbody);
+    // 根据后台给出来json数据 循环遍历 创建 tbody中的行tr 
+    for(var j=0;j<Datas.length;j++){
+        //创建表格行 tr 添加到tbody中
+        var tr =document.createElement("tr");
+        tbody.appendChild(tr);
+        for(var key in Datas[j]){   //通过for key in datas[j]取到后台给的值
+               console.log(Datas[j][key]);
+              //获取表格列 并将遍历获取的值赋给td 将td添加到tr
+            var td=document.createElement("td");
+            td.innerText=Datas[j][key];
+            tr.appendChild(td);
+        }        
+    //动态创建a标签  点击删除      (增加)
+    var a =document.createElement("a");
+    a.href='javascript:;';
+    a.innerText="删除";   //将a标签名改为删除
+    console.log(a);
+    // 创建td  将td 添加到tr中 并将a标签添加到td中
+    var td=document.createElement("td");
+    tr.appendChild(td);
+    td.appendChild(a);
+    //实现点击     删除事件
+    a.onclick=function(){
+        var name=prompt("请确认是否需要删除.确定输入OK");
+         if(name=="OK"){
+            tbody.removeChild(this.parentNode.parentNode);  //点击删除时移除tbody的子节点  即a的父节点 td td的父节点tr
+         }
+        }
+    }
+    </script>
+</body>
+</html>

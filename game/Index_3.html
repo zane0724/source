@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>倩女手游剧情站-三生有幸遇见你，全新主角剧情上线！</title>
+<meta name="from" content="git:QNM/qnm-zt-pc-zhujuejuqingzhan-20170511">
+<meta content="倩女,剧情,剧情站,情缘,沈傲霜,洛昊空,石云馨,霍击蒙,卓断水,杨梦言,萧若兰,聂秋鹰,纳兰青桑,莫忘尘,步临风,殷紫萍,风摇筝,冷月心,花渐隐,叶葬花,水凝墨,乔寻影,檀无心,阮烟罗,侠客,男侠,男侠客,女侠,女侠客,甲士,男甲士,男甲,女甲,女甲士,刀客,男刀客,男刀,女刀客,女刀,射手,男射手,男射,女射手,女射,方士,男方士,女方士,男方,女方,医师,男医师,男医,女医师,女医,魅者,男魅者,男魅,女魅者,女魅,异人,男异人,男异,女异人,女异,男偃师,偃师,男偃,檀无心,女偃师,画魂,男画魂,女画魂,倩女幽魂手游,倩女手游,倩女幽魂,官网,公测,下载,新生剧情,情缘cp,主角剧情,小狐狸,白狐,白狐冷月心,剧情BOSS,新生剧情BOSS,新倩女幽魂正版,倩女幽魂正版,倩女幽魂网页版,倩女幽魂桌面版,唯美古风,新倩女幽魂,国民手游,倩女官网,倩女公测,倩女下载,倩女家园,倩女资料片,倩女一笑倾城,倩女幽魂手游官网,倩女幽魂手游公测,倩女幽魂手游下载,倩女幽魂手游跨服,倩女幽魂手游主角,倩女幽魂手游主角剧情,倩女幽魂手游cp,倩女幽魂手游情缘,倩女幽魂手游姻缘,倩女幽魂手游BOSS,倩女幽魂手游剧情站,倩女幽魂手游20大主角剧情站,倩女幽魂手游故事,倩女幽魂手游兄弟,倩女幽魂手游情义,倩女幽魂手游新生,倩女幽魂手游新生剧情,倩女幽魂手游主角新生剧情,倩女幽魂手游20大主角剧情,倩女幽魂手游家园,倩女幽魂手游资料片,倩女幽魂手游一笑倾城,倩女幽魂手游结婚,倩女幽魂手游梦岛,倩女手游官网,倩女手游公测,倩女手游下载,倩女手游家园,倩女手游资料片,倩女手游一笑倾城,倩女手游结婚,倩女手游梦岛,倩女手游青丘,倩女手游主角,倩女手游主角剧情,倩女手游cp,倩女手游情缘,倩女手游姻缘,倩女手游BOSS,倩女手游剧情站,倩女手游20大主角剧情站,倩女手游故事,倩女手游兄弟,倩女手游情义,倩女手游新生,倩女手游新生剧情,倩女手游主角新生剧情,倩女手游20大主角剧情 " name="keywords">
+<meta content="《倩女幽魂》手游剧情站火热上线！全新的主角剧情，精彩的情缘故事尽在此间！" name="description">
+<meta name="robots" content="all">
+<meta name="author" content="网易，NetEase Inc.">
+<meta name="copyright" content="网易，NetEase Inc.">
+<script>/iphone|ios|android|mobile/i.test(navigator.userAgent.toLowerCase())&&(location.href="//qnm.163.com/m/story/");</script>
+<link rel="stylesheet" data-fixed="true" href="css/index_c43d9f3.css">
+<link rel="stylesheet" href="css/components.css">
+<script src="js/jquery(mixnie).1.11.js"></script>
+<script src="js/jquery.nicescroll.3.6.8.js"></script>
+<link rel="dns-prefetch" href="https://nie.res.netease.com">
+</head>
+
+<body>
+    <!--[if lt IE 10]>
+<div style="position:fixed;left:0;top:0;width:100%;height:50px;background:red;color:#fff;border-bottom:1px
+solid #fff;text-align:center;line-height:50px;font-size:16px;z-index: 999999">
+    您使用的浏览器版本过低，可能会影响到您浏览本网页，建议您升级您的浏览器。
+</div>
+<![endif]-->
+
+    <div id="NIE-topBar"></div>
+
+    <div class="myapp">
+
+        <div class="page-index js-switch an-switchAnim" id="index">
+    <div id="peoplemid" class="layer" data-depth="0.1"></div>
+    <div id="peopleleft" class="layer" data-depth="0.5"></div>
+    <div id="peopleright" class="layer" data-depth="0.15"></div>
+    <div class="slogan"></div>
+    <div class="corner"></div>
+    <a class="btn" href="#/pre/p0"></a>
+</div>
+        <div class="page-innerpre js-switch an-switchAnim " id="pre">
+        <a href="#/index" class="back-index"></a>
+        <div class="slogan"></div>
+        <div class="p0 js-switch" id="p0">
+    <div class="btngp">
+        <a class="btn-pg btn-pg1" href="#/inner2"><span class="flipper"></span></a>
+        <a class="btn-pg btn-pg2" href="#/inner3"><span class="flipper"></span></a>
+        <a class="btn-pg btn-pg3" href="#/inner4"><span class="flipper"></span></a>
+        <a class="btn-pg btn-pg4 js-popinner4" href="javascript:void(0);"><span class="flipper"></span></a>
+    </div>
+</div>
+</div>
+        <div class="page-inner1 js-switch an-switchAnim " id="inner1">
+        <div class="tabnav" id="tabnav">
+                <a class="nav-btn nav-btn-gxjsq" id="inner1_tab_gxjsq" href="#/inner1/gxjsq"></a>
+                <div class="nav-line"></div>
+                <a class="nav-btn nav-btn-ssb" id="inner1_tab_ssb" href="#/inner1/ssb"></a>
+        </div> 
+        <div class="lefttitle"></div>       
+        <div class="inner-p">
+    <div class="scrollcontent" id="inner1scrollcontent">
+        <div class="content js-switch" id="gxjsq">
+            <div class="item">
+                <div class="title t-hdjs">
+                </div>
+                <div class="text">
+                    <p>你我关系，深知几何？谁与谁曾是患难兄弟，谁与谁曾是爱恨纠缠，谁与谁最终生死与共……</p>
+                    <p>使用关系计算器，了解角色间所不为人知的关系，看17大角色荡气回肠的前世故事。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title t-cyfs">
+                </div>
+                <div class="text">
+                    <p>游戏中寻找金陵-董半仙（68,60），对话并选择“算算我的三界机缘”。</p>
+                    <p>
+                        <img alt="董半仙" src="images/董半仙_e9e6e66.png" width="700px" height="406px">
+                    </p>
+                    <p>即可进入关系计算器界面，测试你的三界机缘！（此玩法长期有效，欢迎三界少侠随时来测！）</p>
+                    <p>
+                        <img alt="关系计算器" src="images/计算器_4d886e7.png" width="700px" height="329px">
+                    </p>
+                </div>
+            </div>
+            <!--<div class="item">
+                <div class="title t-hdjl">
+                </div>
+
+                <div class="image">
+                    <img alt="迷路的小男孩" src="images/迷路的小男孩.jpg" width="600px" height="318px" />
+                    <div class="imgdesc">
+                        something
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <div class="content js-switch" id="ssb">
+            <div class="item">
+                <div class="title t-hdjs">
+                </div>
+                <div class="text">
+                    <p>活动时间：5月18日-5月24日全天</p>
+                    <p>任务形式：单人任务</p>
+                    <p>等级需求：30级</p>
+                    <p>陆判手下的鬼差不小心将重要的生死簿散落人间，若是不能收集完好交回，陆判将因泄露天机而遭遇严惩。帮他收集生死簿并交回，他将予以经验作为酬谢，并奉送一朵黄泉生长的美丽彼岸花。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title t-cyfs">
+                </div>
+                <div class="text">
+                    <p>参与日常活动，即有可能获得生死簿，再对话金陵-陆判（65,60）选择“提交生死簿”即可。</p>
+                    <p>
+                        <img alt="陆判" src="images/陆判_d0994b4.png" width="700px" height="411px">
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title t-hdjl">
+                </div>
+
+                <div class="text">
+                    <p>1. 收集生死簿最多的服务器，将提前开启精彩主角剧情。</p>
+                    <p>2. 提交生死簿，可获得以下奖励：</p>
+                    <p>&nbsp;&nbsp;&nbsp;<img src="images/经验_319d908.jpg" alt="经验" width="130px" height="130px"> <span id="tipBianhua"> <img src="images/彼岸花_42a4a7c.jpg" alt="彼岸花" width="130px" height="130px"> <span id="inner1tip"></span>  </span>                        </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        <div class="page-inner2 js-switch an-switchAnim " id="inner2">
+        <div class="inner-p">
+                <div class="selectMD">
+    <div class="stage">
+        <div id="imgstage">
+            <div class="avatar fyz" id="leftavatar"></div>
+            <div class="avatar hjm" id="rightavatar"></div>
+        </div>
+        <div id="mp4stage">
+            <div id="mp4container"></div>
+            <div id="wantmore"></div>
+            <!--<div id="selectplaybtn" class="playbtn"></div>-->
+        </div>        
+    </div>
+    <div class="selectls" id="selectls">
+        <div class="col col-male">
+            <div class="male-before"></div>
+            <div class="avatar " data-role="lhk"></div>
+            <div class="avatar " data-role="hjm"></div>
+            <div class="avatar " data-role="zds"></div>
+            <div class="avatar " data-role="nqy"></div>
+            <div class="avatar " data-role="mwc"></div>
+            <div class="avatar " data-role="blf"></div>
+            <div class="avatar " data-role="lyx"></div>
+            <div class="avatar " data-role="yzh"></div>
+            <div class="avatar " data-role="twx"></div>
+            <div class="avatar " data-role="qxy"></div>
+        </div>
+        <div class="col col-female">
+            <div class="female-before"></div>
+            <div class="avatar " data-role="sas"></div>
+            <div class="avatar " data-role="syx"></div>
+            <div class="avatar " data-role="ymy"></div>
+            <div class="avatar " data-role="xrl"></div>
+            <div class="avatar " data-role="llqs"></div>
+            <div class="avatar " data-role="yzp"></div>
+            <div class="avatar " data-role="fyz"></div>
+            <div class="avatar " data-role="hjy"></div>
+            <div class="avatar " data-role="yyl"></div>
+            <div class="avatar " data-role="snm"></div>
+        </div>
+    </div>
+    <div class="btnls">
+        <div id="again"></div>
+        <div id="helpme"></div>
+    </div>
+</div>
+                <div class="storyMD" id="storyMD">
+    <div class="storytitle"></div>
+    <div class="storyit">
+        <div class="storyhead">试试</div>
+        <div class="storytext">something anything 哈哈哈</div>
+    </div>
+</div>
+                <div class="failed" id="inner2failed"></div>
+                <div class="tip" id="inner2tip">
+                        <div class="arrow"></div>
+                </div>
+                <div id="blanktip"></div>
+        </div>
+        <div class="lefttitle"></div>
+</div>                
+        <div class="page-inner3 js-switch an-switchAnim " id="inner3">
+        <div class="lefttitle"></div>       
+        <div class="inner-p">
+    <div class="item item-nce" data-role="nce" id="bg-nce"></div>
+    <div class="item item-htj" data-role="htj" id="bg-htj"></div>
+    <div class="item item-qyz" data-role="qyz" id="bg-qyz"></div>
+    <div class="item item-sm" data-role="sm" id="bg-sm"></div>
+    <div class="item item-tg" data-role="tg" id="bg-tg"></div>
+    <div class="clickable">
+        <div class="clickitem js-inner3pop" data-role="nce"></div>
+        <div class="clickitem js-inner3pop" data-role="htj"></div>
+        <div class="clickitem js-inner3pop" data-role="qyz"></div>
+        <div class="clickitem js-inner3pop" data-role="sm"></div>
+        <div class="clickitem js-inner3pop" data-role="tg"></div> 
+    </div>      
+</div>
+</div>   
+        <div class="page-inner4 js-switch an-switchAnim " id="inner4">
+        <div class="lefttitle"></div>       
+        <div class="inner-p">
+
+
+    <div id="rightbody">
+        <div id="bigbody" class="llqs">
+            
+        </div>
+        <button id="couple" class="couple">
+            怎么回事
+        </button>
+        <button id="couple2" class="couple">
+            什么情况
+        </button>
+    </div>
+
+    <div id="centermap" class="routine2">
+        <div class="location loca0" id="location0">
+            <div class="beforeicon">
+                <div class="vicon js-icon active"></div>
+                <div class="qicon js-icon active"></div>
+                <div class="js-icon picon"></div>                
+            </div>
+            <div class="dot"></div>
+            <div class="tag jjdy"></div>
+        </div>
+        <div class="location loca1" id="location1">
+            <div class="beforeicon">
+                <div class="vicon js-icon active"></div>
+                <div class="qicon js-icon"></div>
+                <div class="picon js-icon"></div>                
+            </div>
+            <div class="dot"></div>
+            <div class="tag kl"></div>
+        </div>
+        <div class="location loca2" id="location2">
+            <div class="beforeicon">
+                <div class="vicon js-icon"></div>
+                <div class="qicon js-icon"></div>
+                <div class="picon js-icon"></div>                
+            </div>
+            <div class="dot"></div>
+            <div class="tag kls"></div>
+        </div>
+        <div class="location loca3" id="location3">
+            <div class="beforeicon">
+                <div class="vicon js-icon"></div>
+                <div class="qicon active js-icon"></div>
+                <div class="picon js-icon"></div>                
+            </div>
+            <div class="dot"></div>
+            <div class="tag mxl"></div>
+        </div>
+        <div class="location loca4" id="location4">
+            <div class="beforeicon">
+                <div class="vicon js-icon active"></div>
+                <div class="qicon js-icon"></div>
+                <div class="picon js-icon"></div>                
+            </div>
+            <div class="dot"></div>
+            <div class="tag kl"></div>
+        </div>
+        <div class="location loca5" id="location5">
+            <div class="beforeicon">
+                <div class="vicon js-icon"></div>
+                <div class="qicon js-icon"></div>
+                <div class="picon js-icon"></div>                
+            </div>
+            <div class="dot"></div>
+            <div class="tag kls"></div>
+        </div>
+        <div class="location loca6" id="location6">
+            <div class="beforeicon">
+                <div class="vicon js-icon"></div>
+                <div class="qicon active js-icon"></div>
+                <div class="picon js-icon"></div>                
+            </div>
+            <div class="dot"></div>
+            <div class="tag mxl"></div>
+        </div>
+        <div class="location loca7" id="location7">
+            <div class="beforeicon">
+                <div class="vicon js-icon"></div>
+                <div class="qicon active js-icon"></div>
+                <div class="picon js-icon"></div>                
+            </div>
+            <div class="dot"></div>
+            <div class="tag mxl"></div>
+        </div>
+    </div>
+
+    <div class="lefttab">
+        <div class="item">
+            <div class="ti sjy"></div>
+            <div class="left-con">
+                <div class="people js-clickpeople" data-role="nqy"></div>
+                <div class="people js-clickpeople" data-role="xrl"></div>
+                <div class="people js-clickpeople" data-role="hjm"></div>
+                <div class="people js-clickpeople" data-role="syx"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ti xyg"></div>
+            <div class="left-con">
+                <div class="people js-clickpeople" data-role="mwc"></div>
+                <div class="people js-clickpeople" data-role="llqs"></div>
+                <div class="people js-clickpeople" data-role="blf"></div>
+                <div class="people js-clickpeople" data-role="yzp"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ti kls"></div>
+            <div class="left-con">
+                <div class="people js-clickpeople" data-role="lhk"></div>
+                <div class="people js-clickpeople" data-role="sas"></div>
+                <div class="people js-clickpeople" data-role="zds"></div>
+                <div class="people js-clickpeople" data-role="ymy"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ti wyg"></div>
+            <div class="left-con">
+                <div class="people js-clickpeople" data-role="lyx"></div>
+                <div class="people js-clickpeople" data-role="fyz"></div>
+                <div class="people js-clickpeople" data-role="yzh"></div>
+                <div class="people js-clickpeople" data-role="hjy"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ti tgg"></div>
+            <i class="icon-new"></i>
+            <div class="left-con">
+                <div class="people js-clickpeople" data-role="twx"></div>
+                <div class="people js-clickpeople" data-role="yyl"></div>
+                <div class="people js-clickpeople" data-role="qxy"></div>
+                <div class="people js-clickpeople" data-role="snm"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>   
+
+        <div class="logo-nav" id="logo_nav">
+    <div class="logo">
+        <a href="//qnm.163.com/index.html" title="进入官网" target="_blank" style="display: inline-block;width: 100%;height: 100%;"></a>
+    </div>
+    <div class="nav">
+        <ul class="topnav">
+            <li class="icon-download">
+                <a class="dl-text" href="(none)" target="down">下载游戏</a>
+                <div class="qr hide">
+                    <img src="images/qrcode-qnm_28973a9.png" alt="倩女幽魂" class="qrcode" width="80px" height="74px">
+                    <p>扫一扫下载游戏</p>
+                    <span class="bg-after"></span>
+                </div>
+            </li>
+            <li>
+                <a href="http://qnm.163.com/index.html" target="_blank" title="进入官网" class="link-home">进入官网</a>
+            </li>
+            <li id="share"></li>
+        </ul>
+    </div>
+</div>     
+        <div class="left_nav an-leftnav" id="leftnav">
+    <div class="back">
+        <a href="#/index" class="backbtn"></a>
+    </div>
+    <div class="btn-cont btn-qshm">
+        <a href="#/inner2" class="btn-real btn-real-qshm"></a>
+    </div>
+    <div class="btn-cont btn-smzd">
+        <a href="#/inner3" class="btn-real btn-real-smzd"></a>
+    </div> 
+    <div class="btn-cont btn-hrxs">
+        <a href="#/inner4" class="btn-real btn-real-hrxs"></a>
+    </div> 
+    <div class="btn-cont btn-qyzx">
+        <a href="javascript:void(0);" class="btn-real btn-real-qyzx js-popinner4"></a>
+    </div>            
+</div>
+
+
+        <div id="NIE-overlayer"></div>
+<div class="dTc" id="shareTc" style="display:none">
+    <h3 class="hide">倩女幽魂</h3>
+    <a class="aCloseQ" href="javascript:void(0)"></a>
+</div>
+
+<div class="dTc" id="inner3pop" style="display:none">
+    <div class="left-col">
+        <div id="inner3Boss" class="nce"></div>
+        <div id="inner3Name" class="nce"></div>
+    </div>
+    <div class="right-col">
+        <div class="title1"></div>
+        <div id="inner3Defeat" class="nce"></div>
+        <div class="title2"></div>
+        <div class="story" id="story2">
+            <p>asodf</p>
+            <p>ajsdofiaisdj jasidfi jaijsd</p>
+        </div>
+        <div class="title3"></div>
+        <div class="story" id="story3">
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+            <p>111111</p>
+        </div>
+    </div>
+    <a href="javascript:void(0)" id="btn-pre"></a>
+    <a href="javascript:void(0)" id="btn-next"></a>
+    <a class="aCloseQ" href="javascript:void(0)"></a>
+</div>
+
+<div class="dTc" id="inner2pop" style="display:none">
+    <div class="left-col">
+        <div class="stage">
+            <div id="popmp4stage">
+                <div id="popmp4container"></div>
+                <div id="popplaybtn" class="playbtn"></div>
+            </div>
+        </div>
+        <div class="selectls">
+            <div class="avatar2" data-combine="hjm-llqs"></div>
+            <div class="avatar2" data-combine="lyx-ymy"></div>
+            <div class="avatar2" data-combine="mwc-sas"></div>
+            <div class="avatar2" data-combine="yzh-hjy"></div>
+            <div class="avatar2" data-combine="blf-fyz"></div>
+            <div class="avatar2" data-combine="nqy-lhk"></div>
+            <div class="avatar2" data-combine="twx-yzp"></div>
+            <div class="avatar2 avatar3" data-combine="zds-xrl"></div>
+            <div class="avatar2 avatar3" data-combine="qxy-snm"></div>
+        </div>
+    </div>
+    <div class="right-col">
+        <div id="popcombine" class=""></div>
+        <div id="popstoryMD">
+            <div class="storytitle"></div>
+            <div class="storyit">
+                <div class="storyhead">试试</div>
+                <div class="storytext">something anything 哈哈哈</div>
+            </div>
+        </div>        
+    </div>
+    <a class="aCloseQ" href="javascript:void(0)"></a>
+</div>
+
+        
+    <div id="inner4popmask"></div>
+
+    <div id="inner4pop1" class="inner4pop centerpop">
+        <div class="textcontent">
+            欲绝，她已心存死意，随霍击蒙而去。可大萨满还想逼迫纳兰青桑继续为她
+        </div>    
+        <div class="inner4popvideocon">
+            <video src="" id="inner4popvideoKeng" autoplay="true" controls="true">
+                
+            </video>
+        </div>        
+        <a class="closeinner4pop js-closeinner4pop"></a>
+    </div>
+
+    <div id="inner4pop2" class="inner4pop centerpop">
+        <div class="textcontent">
+            欲绝，她已心存死意，随霍击蒙而去。可大萨满还想逼迫纳兰青桑继续为她
+        </div>    
+        <div class="questiontitle">
+            提问
+        </div>
+        <div class="questionls">
+            <div class="question quesa js-pop2item" id="pop2question0" data-option="0">
+                萨满还想
+            </div>
+            <div class="question quesb js-pop2item active" id="pop2question1" data-option="1">
+                萨满还想
+            </div>
+            <div class="question quesc js-pop2item" id="pop2question2" data-option="2">
+                萨满还想
+            </div>
+        </div>
+        <div class="answer">
+            随霍击蒙而去。可大萨满还想逼随霍击蒙而去。可大萨满还想逼随霍击蒙而去。可大萨满还想逼随霍击蒙而去。可大萨满还想逼随霍击蒙而去。可大萨满还想逼
+        </div>                
+        <a class="closeinner4pop js-closeinner4pop"></a>
+    </div>
+
+    <div id="inner4pop3" class="inner4pop centerpop">
+        <div class="textcontent">
+            欲绝，她已心存死意，随霍击蒙而去。可大萨满还想逼迫纳兰青桑继续为她
+        </div>    
+        <div class="inner4popvideocon">
+            <video src="" id="inner4popvideo" autoplay="true" controls="true">
+                
+            </video>
+        </div>
+        <div id="gpKeng">
+            <div class="questiontitle">
+                提问
+            </div>
+            <div class="questionls">
+                <div class="question quesa js-pop3keng" id="pop3keng0" data-option="0">
+                    萨满还想
+                </div>
+                <div class="question quesb js-pop3keng active" id="pop3keng1" data-option="1">
+                    萨满还想
+                </div>
+                <div class="question quesc js-pop3keng" id="pop3keng2" data-option="2">
+                    萨满还想
+                </div>
+            </div>
+            <div class="answer">
+                随霍击蒙而去。可大萨满还想逼随霍击蒙而去。可大萨满还想逼随霍击蒙而去。可大萨满还想逼随霍击蒙而去。可大萨满还想逼随霍击蒙而去。可大萨满还想逼
+            </div>             
+        </div>
+        <div id="gpNormal">
+            <div class="questiontitle">
+                提问
+            </div>
+            <div class="questionls">
+                <div class="question quesa js-pop3item" id="pop3question0" data-option="0">
+                    萨满还想
+                </div>
+                <div class="question quesb js-pop3item" id="pop3question1" data-option="1">
+                    萨满还想
+                </div>
+                <div class="question quesc js-pop3item" id="pop3question2" data-option="2">
+                    萨满还想
+                </div>
+            </div>            
+        </div>
+        <a class="closeinner4pop js-closeinner4pop"></a>
+    </div>
+
+    <div id="inner4pop4" class="centerpop">
+        <div id="pollloading">读取中</div>
+        <div class="pollls">
+            <div class="pollquestion" id="pop4question0">
+                绝，她已心存死意，随霍击蒙而去。可大萨满还想逼迫纳兰
+            </div>
+            <div class="poll" id="pop4data0">
+                <div class="pollbg">
+                    <div class="polldata"></div>
+                </div>
+                <div class="polltext">20%</div>
+            </div>
+            <div class="pollquestion" id="pop4question1">
+                绝，她已心存死意，随霍击蒙而去。可大萨满还想逼迫纳兰
+            </div>
+            <div class="poll" id="pop4data1">
+                <div class="pollbg">
+                    <div class="polldata"></div>
+                </div>
+                <div class="polltext">20%</div>
+            </div>
+            <div class="pollquestion" id="pop4question2">
+                绝，她已心存死意，随霍击蒙而去。可大萨满还想逼迫纳兰
+            </div>
+            <div class="poll" id="pop4data2">
+                <div class="pollbg">
+                    <div class="polldata"></div>
+                </div>
+                <div class="polltext">20%</div>
+            </div>
+        </div>
+
+        <a class="closeinner4pop js-closeinner4pop"></a>    
+    </div>
+
+
+
+    </div>
+
+
+    <div id="NIE-copyRight"></div>
+
+    <div id="share_content" style="display:none">
+    <div id="share_title" pub-name="分享文案">《倩女幽魂》手游开启新生剧情，各大主角向你讲述TA们的情缘故事！</div>
+    <div id="share_desc" pub-name="分享文本">《倩女幽魂》手游开启新生剧情，各大主角向你讲述TA们的情缘故事！
+</div>
+    <img id="share_pic" src="images/share_f58f5eb.jpg" pub-name="分享图片">
+</div>
+
+
+
+
+    <script src="js/mod.js"></script>
+<!-- <script src="js/jweixin-1.0.0.js"></script>
+<script src="js/wxjs.php"></script> -->
+<script src="js/jquery.parallax_75eb2e9.js"></script>
+<script src="js/particles.min_a1035ab.js"></script>
+<script src="js/components.js"></script>
+<script src="js/app_7e7b828.js"></script>
+
+</body>
+
+</html>
+<!--This is Git Project From QNM/qnm-zt-pc-zhujuejuqingzhan-20170511(5665)-->

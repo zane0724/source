@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/template-web.js"></script>
+</head>
+<body>
+    
+    <input type="text" name="" id="aa">
+    <input type="button"  id="btn" value="搜索">
+    <ul>
+        
+    </ul>
+
+    <script type="text/template" id="tpl">
+        {{each  arr  as  item}}
+            <li>{{item}}</li>
+        {{/each}}
+    </script>
+    <script>
+        /*  1、初次进入页面获取本地缓存 */
+        /*  2、点击存储本地缓存*/
+        var aa=document.querySelector("#aa");
+        var btn=document.querySelector("#btn");
+        var ul=document.querySelector("ul");
+
+        var  arr=JSON.parse(localStorage.getItem("key")||"[]");
+        var  html=template("tpl",{arr:arr});
+        ul.innerHTML=html;
+       
+
+       
+        btn.onclick=function(){
+            var  val=aa.value;
+            arr.push(val);
+            localStorage.setItem("key",JSON.stringify(arr))
+            location.href="a.html"
+        }
+
+    </script>
+</body>
+</html>

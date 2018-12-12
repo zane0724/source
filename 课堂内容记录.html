@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    1.伪类元素:  before   以及 after
+        注意:必须写该元素后写入content:"";
+            它们为行内元素,需要转换为块级元素. 通过float   position:absolute  display:block 等转换
+
+    2.伪元素  first-letter   第一个字母  可以设置首字符阴影   给浮动可设置首字符下沉
+                first-line  文本第一行
+                selection     可改变选中文本样式
+            
+        伪类选择器: a:hover  a:link  a:active a:visited
+    3.颜色 background-color: rgba(255,255,255,0.5)   0.5为透明度
+
+    4.
+    阴影   
+        文本阴影:text-shadow: x轴  y轴   模糊值  颜色   多个以,分隔
+                方向:x轴正反向在右边    y轴正方向在y轴的下方
+        边框阴影:box-shadow: h垂直   v水平  blur模糊  spread扩展阴影大小  color  inset内阴影
+    5.盒模型   box-sizing:border-box
+    
+    6.圆角
+        border-radius:  50%;
+        border-top-left-radius:左上圆角 20%;  先上下  后左右
+
+    7.渐变
+    线性渐变
+        background:linear-gradient( 方向 开始颜色  位置)
+            方向:
+                to right 到右边  终点
+                right    起点
+                to bottom(或者不写)   默认为下方
+
+            角度:deg 默认为180度     
+            (45deg)旋转方向为逆时针  默认为180度
+    
+    径向渐变:
+        background:radial-gradient(形状  大小 坐标(at center center ),颜色)
+        形状shape:circle(产生正方形的渐变)  ellipse(适配当前形状)
+        大小:closest-side   farthest-side
+            closest-corner  farthest-corner     默认为最远角
+            
+        background:radial-gradient(circle,red,red 50%,blue 50% blue);
+
+    重复渐变:
+            重复线性渐变:repeating-linear-gradient()
+            重复径向渐变:repeating-radial-gradient()
+
+            径向重复渐变:
+            background:repeating-radial-gradient(circle closest-side at center center, 
+            #fff 0%, #fff 10%,  
+            #000 10%, #000 20%);
+
+            线性重复渐变
+            background:repeating-linear-gradient(45deg, 
+            #fff 0%, #fff 10%,  
+            #000 10%, #000 20%);
+    </body>
+</html>
