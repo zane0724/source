@@ -1,0 +1,259 @@
+@baseColor:red;
+@headColor:#D3079E;
+html,body{
+    background-color: #F1F1F1;
+}
+.donkey_header{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    .donkey_header_L{
+        float: left;
+        height: 50px;
+        >p{
+            font-size: 16px;
+            margin-left: 8px;
+            color: @headColor;
+        }
+        >.angle {
+            color: @headColor;
+            position: absolute;
+            top: 0;
+            left: 45px;
+        }
+    }
+    .donkey_header_r{
+        float: right;
+        height: 50px;
+        >a{
+            text-decoration: none;
+         >img{
+             height: 50px;
+             padding: 12px;
+         }   
+        }    
+    }
+    & p{
+        font-size: 20px;
+    }  
+}
+
+// banner
+.swiper-container{
+    width: 100%;
+    .swiper-wrapper{
+        .swiper-slide{
+        >img{
+            width: 100%;
+            height: 387px;
+            background-size: cover;
+            }
+        }   
+    }    
+}
+
+//nav
+.donkey_nav{
+    width: 100%;
+    .nav_wraper{
+        width: 100%;
+        list-style: none;
+        padding-left: 0px;
+        >li{
+            float: left;
+            width: 33.3%;
+            >a{
+                >img{
+                    width: 100%;
+                    height: 215px;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+//brave  伸缩盒子布局
+.donkey_trave{
+    width: 100%;
+    display: flex;
+    padding:10px 0px;
+    .trave_wraper{
+        width: 100%;
+        display: flex;
+        flex: 2;
+        flex-wrap: wrap;
+        padding-left: 0;
+        >li{
+            float: left;
+            width: 25%;
+            border: 1px solid gray;
+            list-style: none;
+            >a{
+                >img{
+                    width: 100%;
+                    height: 225px;
+                    background-size: cover;
+                }
+            }    
+        }      
+    }
+}
+ //brave  百分比布局写法
+// .donkey_trave{
+//      width: 100%;
+     
+//     .trave_wraper{
+//         width: 100%;
+//         list-style: none;
+//         padding-left: 0;
+//         // margin-bottom: 0px;
+//         // margin-bottom: 10px;
+//     >li{
+//         float: left;
+//         width: 24.3%;
+//         border: 1px solid gray;
+//         >a{
+//             >img{
+//                 width: 100%;
+//                 height: 225px;
+//                 background-size: cover;
+//                 }
+//             }
+//         }
+//     }   
+// }
+//prive
+.donkey_price{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    .love{
+        flex: 1;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+            >a{
+                >img{
+                    width: 100%;
+                    height: 447px;
+                    background-size: cover;
+                }
+            }
+        }
+    & .wash{
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+        .wash_top,
+        .wash_bottom{
+            width: 100%;  
+            border-bottom:1px solid gray;
+            a{
+                img{
+                    width: 100%;
+                    height: 223px;
+                    background-size: cover;  
+                }
+            }
+        }
+    }
+}   
+// donkey_hot
+.donkey_hot{
+    width: 100%;
+    .hot{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid rgb(215, 225, 228);
+        >p{
+            font-size: 16px;
+            margin-left: 8px;
+        }
+    }
+    & .one,.night,.hundred,.thousand{
+        width: 100%;
+        border-top: 1px solid rgb(215, 225, 228);
+        border-bottom: 1px solid rgb(215, 225, 228);
+        >a{
+            img{
+                width: 100%;
+                height: 223px;
+                background-size: cover;
+            }
+        }
+    }
+}
+// donkey_holiday
+.donkey_holiday{ 
+    width: 100%;
+    margin-top: 15px;
+    .holiday_head{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-top: 1px solid rgb(215, 225, 228);
+        border-bottom: 1px solid rgb(215, 225, 228);
+        >a:nth-of-type(1){
+            margin-left: 25%;
+        } 
+        a:nth-of-type(2){
+            margin-left: 25%;     
+        } 
+    }
+    .mama{
+        width: 100%;
+        border-top: 1px solid rgb(215, 225, 228);
+        border-bottom: 1px solid rgb(215, 225, 228);
+        >a{
+            img{
+                width: 100%;
+                height: 523px;
+                background-size: cover;
+            }
+        }
+    }
+    .hot_active{
+        width: 100%;
+        .hot_in{
+            width: 100%;
+            height: 50px;
+            border-top: 1px solid rgb(215, 225, 228);
+            border-bottom: 1px solid rgb(215, 225, 228);
+            >p{
+                font-size: 12px;
+            }
+        }
+        >img{
+            width: 100%;
+            height: 523px;
+            background-size: cover;
+            }
+        }
+    }
+// donkey_footer 
+.donkey_footer {
+    width: 100%;
+    .footer_in{
+        margin-top: 20px;
+        margin-bottom: 5px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #D3079E;
+        padding:0 20px;
+        >a{
+            text-decoration: none;
+            font-size: 22px;
+            color: #ffffff
+        }
+        a:nth-of-type(2){
+            margin-left: 20px;
+        }
+        a:last-of-type{
+            float: right;
+        }
+    }
+  
+}

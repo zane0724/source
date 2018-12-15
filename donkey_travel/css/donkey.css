@@ -1,0 +1,215 @@
+html,
+body {
+  background-color: #F1F1F1;
+}
+.donkey_header {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+}
+.donkey_header .donkey_header_L {
+  float: left;
+  height: 50px;
+}
+.donkey_header .donkey_header_L > p {
+  font-size: 16px;
+  margin-left: 8px;
+  color: #D3079E;
+}
+.donkey_header .donkey_header_L > .angle {
+  color: #D3079E;
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+.donkey_header .donkey_header_r {
+  float: right;
+  height: 50px;
+}
+.donkey_header .donkey_header_r > a {
+  text-decoration: none;
+}
+.donkey_header .donkey_header_r > a > img {
+  height: 50px;
+  padding: 12px;
+}
+.donkey_header p {
+  font-size: 20px;
+}
+.swiper-container {
+  width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide > img {
+  width: 100%;
+  height: 387px;
+  background-size: cover;
+}
+.donkey_nav {
+  width: 100%;
+}
+.donkey_nav .nav_wraper {
+  width: 100%;
+  list-style: none;
+  padding-left: 0px;
+}
+.donkey_nav .nav_wraper > li {
+  float: left;
+  width: 33.3%;
+}
+.donkey_nav .nav_wraper > li > a > img {
+  width: 100%;
+  height: 215px;
+  background-size: cover;
+}
+.donkey_trave {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+}
+.donkey_trave .trave_wraper {
+  width: 100%;
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.donkey_trave .trave_wraper > li {
+  float: left;
+  width: 25%;
+  border: 1px solid gray;
+  list-style: none;
+}
+.donkey_trave .trave_wraper > li > a > img {
+  width: 100%;
+  height: 225px;
+  background-size: cover;
+}
+.donkey_price {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+.donkey_price .love {
+  flex: 1;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.donkey_price .love > a > img {
+  width: 100%;
+  height: 447px;
+  background-size: cover;
+}
+.donkey_price .wash {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.donkey_price .wash .wash_top,
+.donkey_price .wash .wash_bottom {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.donkey_price .wash .wash_top a img,
+.donkey_price .wash .wash_bottom a img {
+  width: 100%;
+  height: 223px;
+  background-size: cover;
+}
+.donkey_hot {
+  width: 100%;
+}
+.donkey_hot .hot {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #d7e1e4;
+}
+.donkey_hot .hot > p {
+  font-size: 16px;
+  margin-left: 8px;
+}
+.donkey_hot .one,
+.donkey_hot .night,
+.donkey_hot .hundred,
+.donkey_hot .thousand {
+  width: 100%;
+  border-top: 1px solid #d7e1e4;
+  border-bottom: 1px solid #d7e1e4;
+}
+.donkey_hot .one > a img,
+.donkey_hot .night > a img,
+.donkey_hot .hundred > a img,
+.donkey_hot .thousand > a img {
+  width: 100%;
+  height: 223px;
+  background-size: cover;
+}
+.donkey_holiday {
+  width: 100%;
+  margin-top: 15px;
+}
+.donkey_holiday .holiday_head {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #d7e1e4;
+  border-bottom: 1px solid #d7e1e4;
+}
+.donkey_holiday .holiday_head > a:nth-of-type(1) {
+  margin-left: 25%;
+}
+.donkey_holiday .holiday_head a:nth-of-type(2) {
+  margin-left: 25%;
+}
+.donkey_holiday .mama {
+  width: 100%;
+  border-top: 1px solid #d7e1e4;
+  border-bottom: 1px solid #d7e1e4;
+}
+.donkey_holiday .mama > a img {
+  width: 100%;
+  height: 523px;
+  background-size: cover;
+}
+.donkey_holiday .hot_active {
+  width: 100%;
+}
+.donkey_holiday .hot_active .hot_in {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #d7e1e4;
+  border-bottom: 1px solid #d7e1e4;
+}
+.donkey_holiday .hot_active .hot_in > p {
+  font-size: 12px;
+}
+.donkey_holiday .hot_active > img {
+  width: 100%;
+  height: 523px;
+  background-size: cover;
+}
+.donkey_footer {
+  width: 100%;
+}
+.donkey_footer .footer_in {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #D3079E;
+  padding: 0 20px;
+}
+.donkey_footer .footer_in > a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #ffffff;
+}
+.donkey_footer .footer_in a:nth-of-type(2) {
+  margin-left: 20px;
+}
+.donkey_footer .footer_in a:last-of-type {
+  float: right;
+}

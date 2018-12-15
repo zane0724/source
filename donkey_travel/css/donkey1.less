@@ -1,0 +1,49 @@
+@baseColor:#e92322;
+.donkey{
+    width: 100%;
+    max-width: 640px; 
+    min-width: 320px;
+    height: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+    .donkey_header{
+        width: 100%;
+        max-width: 640px; /*手机最大宽度*/
+        position: fixed;  /*固定在顶部*/
+        height: 50px;
+        border:1px solid red;
+        z-index: 999;
+        >p{
+           text-align: center; 
+           line-height: 50px;
+        }
+        .donkey_header_L,
+        .donkey_header_r{
+            width: 80px;
+            height: 50px;
+            // background-color: gray;
+            position: absolute;
+            top: 0;
+        }
+        .donkey_header_L{
+            left: 5px;
+            >p{
+                line-height: 50px;
+            }
+            .angle{
+                position: absolute;
+                top: 15px;
+                left: 35px;
+                color: red;
+            }     
+        }
+        .donkey_header_r{
+            right: -30px;
+            >img{
+                height: 50px;
+                padding: 10px;        
+            }       
+        }
+        
+        }
+}

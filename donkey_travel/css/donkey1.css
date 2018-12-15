@@ -1,0 +1,48 @@
+.donkey {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  height: 1000px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.donkey .donkey_header {
+  width: 100%;
+  max-width: 640px;
+  /*手机最大宽度*/
+  position: fixed;
+  /*固定在顶部*/
+  height: 50px;
+  border: 1px solid red;
+  z-index: 999;
+}
+.donkey .donkey_header > p {
+  text-align: center;
+  line-height: 50px;
+}
+.donkey .donkey_header .donkey_header_L,
+.donkey .donkey_header .donkey_header_r {
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+}
+.donkey .donkey_header .donkey_header_L {
+  left: 5px;
+}
+.donkey .donkey_header .donkey_header_L > p {
+  line-height: 50px;
+}
+.donkey .donkey_header .donkey_header_L .angle {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  color: red;
+}
+.donkey .donkey_header .donkey_header_r {
+  right: -30px;
+}
+.donkey .donkey_header .donkey_header_r > img {
+  height: 50px;
+  padding: 10px;
+}
