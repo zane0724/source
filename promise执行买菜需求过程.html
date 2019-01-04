@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>需求:promise执行买菜做饭过程</h2>   <br>
+    1.买菜  <br>
+    2.洗菜  <br>
+    3.做饭  <br>
+    4.吃饭  <br>
+</body>
+    <script>
+        let flag =1;
+        function step1(resolve,reject){
+           console.log("准备去买菜");
+           if(flag==1){
+             resolve("买好了")
+           }else{
+             reject("没菜了")
+           }
+        }
+        
+        function step2(resolve,reject){
+           console.log("洗菜");
+           if(flag==1){
+             resolve("洗好了");
+           }else{
+             reject("没水");
+           }
+        }
+        function step3(resolve,reject){
+           console.log("开始做饭");
+           if(flag==1){
+             resolve("做好了");
+           }else{
+             reject("煤气没了");
+           }
+        }
+        function step4(resolve,reject){
+           console.log("准备吃饭");
+           if(flag==1){
+             resolve("真好吃");
+           }else{
+             reject("真难吃");
+           }
+        }
+        function step5(resolve,reject){
+           console.log("剪刀石头布洗碗");
+           if(flag==0){
+             resolve("女朋友洗");
+           }else{
+             reject("不洗");
+           }
+        }
+        new Promise(step1).then((val1)=>{
+           console.log(val1);
+           return new Promise(step2)
+        }).then((val2)=>{
+           console.log(val2);
+           return new Promise(step3)
+        }).then((val3)=>{
+           console.log(val3)
+           return new Promise(step4)
+        }).then((val4)=>{
+           console.log(val4)
+           return new Promise(step5)
+        }).then((val5)=>{
+           console.log(val5)
+        })
+    </script>
+</html>

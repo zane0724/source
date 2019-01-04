@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./data/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    
+</body>
+    <script>
+        let p1=new Promise(function(resolve,reject){
+            $.ajax({
+                url:"data/arr.txt",
+                dataType:"json",
+                success:(data)=>{
+                    resolve(data)
+                },
+                error:(err)=>{
+                    reject(err)
+                }
+            })
+        })
+        
+        let p2=new Promise(function(resolve,reject){
+            $.ajax({
+                url:"data/json.txt",
+                dataType:"json",
+                success:(data)=>{
+                    resolve(data)
+                },
+                error:(err)=>{
+                    reject(err)
+                }
+            })
+        })
+        Promise.all([
+            p1,p2
+        ]).then(function(data){
+            console.log(data);
+            let[res1,res2] =data
+            alert("成功了") 
+            console.log(res1);
+                console.log(res2);
+                
+        }),function(){
+            alert("至少一个失败了")
+        }
+    </script>
+</html>
